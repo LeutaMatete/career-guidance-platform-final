@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-backend/serviceAccountKey.json
-backend/serviceAccountKey.json
-=======
+
 # Logs
 logs
 *.log
@@ -142,4 +139,5 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 >>>>>>> 8e28ba9a41d98f1dbd628dbbaacb61586765a5b1
+backend/serviceAccountKey.json
 backend/serviceAccountKey.json
