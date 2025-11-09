@@ -1,0 +1,114 @@
+.applications-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.application-card {
+  flex: 0 0 auto;
+  min-width: 320px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-4px);
+  border-color: #2f81f7;
+}
+
+.application-header h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.institution-name {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.application-details {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #c9d1d9;
+}
+
+.application-progress {
+  margin-top: 10px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #c9d1d9;
+}
+
+.progress-bar {
+  background-color: #30363d;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.application-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #2f81f7;
+  color: #2f81f7;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .application-card {
+    min-width: 280px;
+  }
+}

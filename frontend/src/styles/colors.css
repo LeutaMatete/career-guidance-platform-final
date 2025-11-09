@@ -1,0 +1,275 @@
+/* Color Variables */
+:root {
+  /* Primary Colors */
+  --primary-bg: #000000;
+  --secondary-bg: #1a1a1a;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #888888;
+  
+  /* Accent Colors */
+  --accent-blue: #667eea;
+  --accent-green: #4ade80;
+  --accent-dark-blue: #4f46e5;
+  --accent-dark-green: #16a34a;
+  --accent-yellow: #facc15;
+  --accent-red: #ef4444;
+  --accent-purple: #a855f7;
+  
+  /* Status Colors */
+  --status-pending: #facc15;
+  --status-approved: #4ade80;
+  --status-rejected: #ef4444;
+  --status-admitted: #4ade80;
+  --status-not-qualified: #ef4444;
+  
+  /* Button Colors */
+  --btn-primary-bg: #667eea;
+  --btn-primary-hover: #5a67d8;
+  --btn-success-bg: #4ade80;
+  --btn-success-hover: #22c55e;
+  --btn-outline-bg: transparent;
+  --btn-outline-border: #667eea;
+  --btn-outline-text: #667eea;
+  --btn-danger-bg: #ef4444;
+  --btn-danger-hover: #dc2626;
+  
+  /* Link Colors */
+  --link-color: #667eea;
+  --link-hover: #5a67d8;
+  
+  /* Shadow Colors */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  
+  /* Gradient Backgrounds */
+  --gradient-bg: linear-gradient(135deg, #000000, #1a1a1a);
+}
+
+/* Global Color Overrides */
+body {
+  background: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary) !important;
+}
+
+p, span, div, li, td, th {
+  color: var(--text-secondary) !important;
+}
+
+/* Links and Buttons */
+a {
+  color: var(--link-color) !important;
+}
+
+a:hover {
+  color: var(--link-hover) !important;
+}
+
+.btn-primary {
+  background: var(--btn-primary-bg) !important;
+  border-color: var(--btn-primary-bg) !important;
+}
+
+.btn-primary:hover {
+  background: var(--btn-primary-hover) !important;
+  border-color: var(--btn-primary-hover) !important;
+}
+
+.btn-success {
+  background: var(--btn-success-bg) !important;
+  border-color: var(--btn-success-bg) !important;
+}
+
+.btn-success:hover {
+  background: var(--btn-success-hover) !important;
+  border-color: var(--btn-success-hover) !important;
+}
+
+.btn-outline {
+  background: var(--btn-outline-bg) !important;
+  border-color: var(--btn-outline-border) !important;
+  color: var(--btn-outline-text) !important;
+}
+
+.btn-outline:hover {
+  background: var(--btn-outline-border) !important;
+  color: white !important;
+}
+
+.btn-danger {
+  background: var(--btn-danger-bg) !important;
+  border-color: var(--btn-danger-bg) !important;
+}
+
+.btn-danger:hover {
+  background: var(--btn-danger-hover) !important;
+  border-color: var(--btn-danger-hover) !important;
+}
+
+/* Forms and Inputs */
+.form-control {
+  background: var(--secondary-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-control:focus {
+  border-color: var(--accent-blue) !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+.form-control::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Cards and Containers */
+.card {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+.card-header {
+  background: var(--secondary-bg) !important;
+}
+
+/* Tables */
+.table {
+  background: var(--card-bg) !important;
+}
+
+.table th {
+  background: var(--secondary-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+.table tr:hover {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Alerts and Messages */
+.alert-success {
+  background: rgba(74, 222, 128, 0.1) !important;
+  border-color: var(--accent-green) !important;
+  color: var(--accent-green) !important;
+}
+
+.alert-error {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border-color: var(--accent-red) !important;
+  color: var(--accent-red) !important;
+}
+
+.alert-warning {
+  background: rgba(250, 204, 21, 0.1) !important;
+  border-color: var(--accent-yellow) !important;
+  color: var(--accent-yellow) !important;
+}
+
+/* Navigation */
+.nav-link {
+  color: var(--text-secondary) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-blue) !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Sidebar and Menu Items */
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: var(--secondary-bg) !important;
+  color: var(--accent-blue) !important;
+}
+
+/* Status Badges */
+.status-badge {
+  text-transform: capitalize !important;
+}
+
+.status-pending {
+  background: var(--status-pending) !important;
+  color: #000000 !important;
+}
+
+.status-approved {
+  background: var(--status-approved) !important;
+  color: #ffffff !important;
+}
+
+.status-rejected {
+  background: var(--status-rejected) !important;
+  color: #ffffff !important;
+}
+
+.status-admitted {
+  background: var(--status-admitted) !important;
+  color: #ffffff !important;
+}
+
+.status-not-qualified {
+  background: var(--status-not-qualified) !important;
+  color: #ffffff !important;
+}
+
+/* Dashboard Stats */
+.stat-card {
+  border-left-color: var(--accent-blue) !important;
+}
+
+.student-dashboard .stat-card {
+  border-left-color: var(--accent-green) !important;
+}
+
+.institute-dashboard .stat-card {
+  border-left-color: var(--accent-blue) !important;
+}
+
+.company-dashboard .stat-card {
+  border-left-color: var(--accent-dark-green) !important;
+}
+
+.admin-dashboard .stat-card {
+  border-left-color: var(--accent-dark-blue) !important;
+}
+
+/* Progress Bars and Indicators */
+.progress-bar {
+  background: var(--border-color) !important;
+}
+
+.progress-fill {
+  background: var(--accent-blue) !important;
+}
+
+/* Modal Elements */
+.modal-content {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+.modal-header {
+  background: var(--secondary-bg) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+
+.modal-footer {
+  border-top-color: var(--border-color) !important;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border-top-color: var(--accent-blue) !important;
+  border-right-color: var(--accent-blue) !important;
+  border-bottom-color: var(--accent-blue) !important;
+  border-left-color: var(--accent-green) !important;
+}

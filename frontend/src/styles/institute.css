@@ -1,0 +1,402 @@
+/* Institute Dashboard Styles */
+.institute-dashboard {
+  background: #0d1117;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.institute-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.institute-header {
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.institute-header h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.institute-header p {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
+
+/* Institute Sidebar */
+.institute-sidebar {
+  width: 250px;
+  background: #161b22;
+  border-right: 1px solid #30363d;
+  height: calc(100vh - 4rem);
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  padding: 1.5rem 0;
+  overflow-y: auto;
+}
+
+.institute-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.institute-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #c9d1d9;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.institute-link:hover,
+.institute-link.active {
+  background: #161b22;
+  color: #58a6ff;
+  border-left-color: #58a6ff;
+}
+
+/* Main Content Area */
+.institute-content {
+  margin-left: 250px;
+  padding: 2rem;
+  background: #161b22;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  margin-top: 2rem;
+}
+
+/* Course Management */
+.course-management {
+  margin-bottom: 2rem;
+}
+
+.course-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.course-code {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.course-details {
+  margin-bottom: 1rem;
+}
+
+/* Application Review */
+.applications-list {
+  margin-top: 2rem;
+}
+
+.application-review {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-student {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.review-course {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.review-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Faculty Management */
+.faculty-list {
+  margin-top: 1.5rem;
+}
+
+.faculty-item {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faculty-name {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.faculty-department {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+/* Statistics */
+.stats-overview {
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: #161b22;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+/* Forms */
+.institute-form {
+  background: #161b22;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-institute {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #238636;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2ea043;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+}
+
+.btn-outline:hover {
+  background: rgba(88, 166, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #58a6ff;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #7dafff;
+  transform: translateY(-1px);
+}
+
+/* Tables */
+.institute-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.institute-table th,
+.institute-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #30363d;
+}
+
+.institute-table th {
+  background: #161b22;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.institute-table tr:last-child td {
+  border-bottom: none;
+}
+
+.institute-table tr:hover {
+  background: #161b22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .institute-sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid #30363d;
+  }
+  
+  .institute-content {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-buttons .btn-institute {
+    width: 100%;
+  }
+}
+.stats-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.stat-card {
+  flex: 0 0 auto;
+  min-width: 220px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+  scroll-snap-align: start;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #58a6ff;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #c9d1d9;
+}
+.application-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-4px);
+  border-color: #2f81f7;
+}
